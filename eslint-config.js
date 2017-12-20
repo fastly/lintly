@@ -2,8 +2,7 @@ module.exports = {
   extends: 'eslint:recommended',
 
   rules: {
-    'array-bracket-spacing': [ 'error', 'always' ],
-    'brace-style': [ 'error', '1tbs', { allowSingleLine: true } ],
+    'brace-style': ['error', '1tbs', { allowSingleLine: true }],
     'comma-dangle': [
       'error',
       {
@@ -14,14 +13,19 @@ module.exports = {
         functions: 'ignore',
       },
     ],
-    curly: [ 'error', 'multi-line' ],
+    curly: ['error', 'multi-line'],
     'ember-suave/no-const-outside-module-scope': 'off',
     'ember-suave/no-direct-property-access': 'off',
-    indent: [ 'error', 2, { MemberExpression: 0 } ],
-    'max-statements-per-line': [ 'error', { max: 2 } ], // allow one-line if
-    'operator-linebreak': [ 'error', 'after' ],
-    'quote-props': [ 'error', 'as-needed' ],
-    quotes: [ 'error', 'single', { avoidEscape: true } ],
-    semi: [ 'error', 'never' ],
+    'max-statements-per-line': ['error', { max: 2 }], // allow one-line if
+    'operator-linebreak': ['error', 'after'],
+    'quote-props': ['error', 'as-needed'],
+    quotes: ['error', 'single', { avoidEscape: true }],
+    semi: ['error', 'never'],
+
+    // handled by prettier:
+    'array-bracket-spacing': 0,
+    'arrow-parens': 0,
+    indent: 0,
+    'keyword-spacing': 0,
   },
 }
