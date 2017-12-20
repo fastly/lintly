@@ -12,3 +12,12 @@ Add
 extends: "@fastly/lintly/eslint-config"
 ```
 to your project's `.eslintrc.js`.
+
+### Prettier
+
+Add
+```js
+module.exports = require('@fastly/lintly/prettier.config')
+```
+
+to your project's `prettier.config.js`.

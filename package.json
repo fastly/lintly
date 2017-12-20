@@ -4,7 +4,7 @@
   "description": "Fastly's front-end style-guide, with configuration for eslint, tslint, stylelint, and more",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/eslint *.js .*.js"
+    "test": "node_modules/.bin/eslint *.js .*.js && node_modules/.bin/prettier --list-different '{*,.*}.js'"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
     "eslint": ">= 3"
   },
   "devDependencies": {
-    "eslint": ">= 3"
+    "eslint": ">= 3",
+    "prettier": "^1.9.2"
   }
 }

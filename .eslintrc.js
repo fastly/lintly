@@ -3,12 +3,12 @@ module.exports = {
 
   parserOptions: {
     ecmaVersion: 2017,
-    sourceType: 'module'
+    sourceType: 'module',
   },
 
   env: {
-    node: true
+    node: true,
   },
 
-  extends: './eslint-config.js'
+  extends: './eslint-config.js',
 }
