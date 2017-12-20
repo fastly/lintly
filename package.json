@@ -1,14 +1,14 @@
 {
-  "name": "@fastly/eslint-config",
+  "name": "@fastly/lintly",
   "version": "1.0.0",
-  "description": "Fastly's JavaScript style-guide as an ESLint configuration module",
+  "description": "Fastly's front-end style-guide, with configuration for eslint, tslint, stylelint, and more",
   "main": "index.js",
   "scripts": {
-    "test": "eslint index.js .eslintrc.js"
+    "test": "node_modules/.bin/eslint *.js .*.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fastly/eslint-config.git"
+    "url": "git+https://github.com/fastly/lintly.git"
   },
   "keywords": [
     "eslint"
@@ -16,9 +16,9 @@
   "author": "Fastly <support@fastly.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fastly/eslint-config/issues"
+    "url": "https://github.com/fastly/lintly/issues"
   },
-  "homepage": "https://github.com/fastly/eslint-config#readme",
+  "homepage": "https://github.com/fastly/lintly#readme",
   "peerDependencies": {
     "eslint": ">= 3"
   },

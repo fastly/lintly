@@ -1,16 +1,14 @@
 ## @fastly/eslint-config
 
-This project represents Fastly's JavaScript style-guide as
-an [eslint configuration module](https://eslint.org/docs/developer-guide/shareable-configs)
-
+This project represents Fastly's front-end style-guide as a set of configurations for common linters.
 ### Installation
 
-With yarn or npm, as `@fastly/eslint-config`.
+With npm: `@fastly/lintly`.
 
-### Usage
+### eslint
 
 Add
 ```js
-extends: "@fastly/eslint-config"
+extends: "@fastly/lintly/eslint-config"
 ```
 to your project's `.eslintrc.js`.
