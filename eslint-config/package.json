@@ -1,0 +1,22 @@
+{
+  "name": "@fastly/eslint-config",
+  "version": "1.0.0",
+  "description": "Fastly's default eslint configuration",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fastly/lintly.git"
+  },
+  "keywords": [
+    "eslint"
+  ],
+  "author": "Fastly <support@fastly.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fastly/lintly/issues"
+  },
+  "homepage": "https://github.com/fastly/lintly#readme",
+  "peerDependencies": {
+    "eslint": ">= 3"
+  }
+}

@@ -1,16 +1,13 @@
 {
-  "name": "@fastly/lintly",
-  "version": "0.0.0",
-  "description": "Monorepo for Fastly's linting configuration",
-  "scripts": {
-    "test": "node_modules/.bin/eslint ./**/*.js ./**/.*.js && node_modules/.bin/prettier --list-different '{*,.*}.js' './*/{*,.*}.js'"
-  },
+  "name": "@fastly/prettier-config",
+  "version": "1.0.0",
+  "description": "Fastly's default eslint configuration",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fastly/lintly.git"
   },
   "keywords": [
-    "eslint",
     "prettier"
   ],
   "author": "Fastly <support@fastly.com>",
@@ -19,8 +16,7 @@
     "url": "https://github.com/fastly/lintly/issues"
   },
   "homepage": "https://github.com/fastly/lintly#readme",
-  "devDependencies": {
-    "eslint": ">= 3",
+  "peerDependencies": {
     "prettier": "^1.9.2"
   }
 }
