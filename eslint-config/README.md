@@ -9,7 +9,8 @@ npm install --save-dev \
   eslint-plugin-ember-suave@^1.0.0 \
   eslint-config-prettier@^2.9.0 \
   eslint-plugin-prettier@^2.4.0 \
-  eslint@>=3
+  eslint@^4.12.1 \
+  prettier@^1.9.2
 ```
 
 Currently, `@fastly/eslint-config` declares several `peerDependencies` because eslint's module-loader is incapable of finding transitive dependencies. See [eslint/eslint#3458](https://github.com/eslint/eslint/issues/3458). When eslint supports transitive plugins, `@fastly/eslint-config` can declare true dependencies so consuming projects can install just a single package.

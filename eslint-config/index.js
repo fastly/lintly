@@ -25,7 +25,6 @@ module.exports = {
     'ember-suave/no-const-outside-module-scope': 'off',
     'ember-suave/no-direct-property-access': 'off',
     'max-statements-per-line': ['error', { max: 2 }], // allow one-line if
-    'operator-linebreak': ['error', 'after'],
 
     'prettier/prettier': ['error', fastlyPrettierConfig],
 
@@ -38,5 +37,6 @@ module.exports = {
     'arrow-parens': 0,
     indent: 0,
     'keyword-spacing': 0,
+    'operator-linebreak': 0,
   },
 }
