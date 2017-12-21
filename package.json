@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "Monorepo for Fastly's linting configuration",
   "scripts": {
-    "test": "node_modules/.bin/eslint ./**/*.js ./**/.*.js && node_modules/.bin/prettier --list-different '{*,.*}.js' './*/{*,.*}.js'"
+    "test": "node_modules/.bin/eslint ."
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,9 @@
     "@fastly/eslint-config": "file:eslint-config",
     "@fastly/prettier-config": "file:prettier-config",
     "eslint": "^4.12.1",
+    "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-ember-suave": "^1.0.0",
+    "eslint-plugin-prettier": "^2.4.0",
     "prettier": "^1.9.2"
   }
 }

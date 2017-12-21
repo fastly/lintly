@@ -1,5 +1,13 @@
+const fastlyPrettierConfig = require('@fastly/prettier-config')
+
 module.exports = {
-  extends: ['eslint:recommended', 'plugin:ember-suave/recommended'],
+  extends: [
+    'eslint:recommended',
+    'plugin:prettier/recommended',
+    'plugin:ember-suave/recommended',
+  ],
+
+  plugins: ['prettier'],
 
   rules: {
     'brace-style': ['error', '1tbs', { allowSingleLine: true }],
@@ -18,6 +26,9 @@ module.exports = {
     'ember-suave/no-direct-property-access': 'off',
     'max-statements-per-line': ['error', { max: 2 }], // allow one-line if
     'operator-linebreak': ['error', 'after'],
+
+    'prettier/prettier': ['error', fastlyPrettierConfig],
+
     'quote-props': ['error', 'as-needed'],
     quotes: ['error', 'single', { avoidEscape: true }],
     semi: ['error', 'never'],
