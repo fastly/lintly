@@ -10,5 +10,5 @@ module.exports = {
     node: true,
   },
 
-  extends: './eslint-config.js',
+  extends: './eslint-config/index.js',
 }
