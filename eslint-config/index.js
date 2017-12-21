@@ -1,5 +1,5 @@
 module.exports = {
-  extends: 'eslint:recommended',
+  extends: ['eslint:recommended', 'plugin:ember-suave/recommended'],
 
   rules: {
     'brace-style': ['error', '1tbs', { allowSingleLine: true }],

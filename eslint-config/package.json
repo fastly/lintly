@@ -1,6 +1,6 @@
 {
   "name": "@fastly/eslint-config",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Fastly's default eslint configuration",
   "main": "index.js",
   "repository": {
@@ -8,7 +8,8 @@
     "url": "git+https://github.com/fastly/lintly.git"
   },
   "keywords": [
-    "eslint"
+    "eslint",
+    "eslint-config"
   ],
   "author": "Fastly <support@fastly.com>",
   "license": "MIT",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/fastly/lintly#readme",
   "peerDependencies": {
-    "eslint": ">= 3"
+    "eslint": ">= 3",
+    "eslint-plugin-ember-suave": "^1.0.0"
   }
 }
