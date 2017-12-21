@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "Monorepo for Fastly's linting configuration",
   "scripts": {
-    "test": "node_modules/.bin/eslint ."
+    "lint": "node_modules/.bin/eslint ."
   },
   "repository": {
     "type": "git",
