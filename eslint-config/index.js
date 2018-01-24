@@ -1,11 +1,7 @@
 const fastlyPrettierConfig = require('@fastly/prettier-config')
 
 module.exports = {
-  extends: [
-    'eslint:recommended',
-    'plugin:prettier/recommended',
-    'plugin:ember-suave/recommended',
-  ],
+  extends: ['eslint:recommended', 'plugin:prettier/recommended', 'plugin:ember-suave/recommended'],
 
   plugins: ['prettier'],
 
