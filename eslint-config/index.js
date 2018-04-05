@@ -21,6 +21,12 @@ module.exports = {
     'ember-suave/no-const-outside-module-scope': 'off',
     'ember-suave/no-direct-property-access': 'off',
     'max-statements-per-line': ['error', { max: 2 }], // allow one-line if
+    'no-console': [
+      'error',
+      {
+        allow: ['error', 'warn'],
+      },
+    ],
 
     'prettier/prettier': ['error', fastlyPrettierConfig],
 
