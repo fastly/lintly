@@ -1,14 +1,11 @@
 module.exports = {
-  root: true,
-
+  env: {
+    node: true,
+  },
+  extends: '@fastly',
   parserOptions: {
     ecmaVersion: 2017,
     sourceType: 'module',
   },
-
-  env: {
-    node: true,
-  },
-
-  extends: '@fastly',
+  root: true,
 }
