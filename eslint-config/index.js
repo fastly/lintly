@@ -1,6 +1,6 @@
 const fastlyPrettierConfig = require('@fastly/prettier-config')
 
-module.exports = {
+const config = {
   extends: ['eslint:recommended', 'plugin:prettier/recommended', 'plugin:ember-suave/recommended'],
 
   plugins: ['prettier'],
@@ -11,10 +11,10 @@ module.exports = {
       'error',
       {
         arrays: 'always-multiline',
-        objects: 'only-multiline',
-        imports: 'only-multiline',
         exports: 'only-multiline',
         functions: 'ignore',
+        imports: 'only-multiline',
+        objects: 'only-multiline',
       },
     ],
     curly: ['error', 'multi-line'],
@@ -27,18 +27,23 @@ module.exports = {
         allow: ['error', 'warn'],
       },
     ],
-
     'prettier/prettier': ['error', fastlyPrettierConfig],
-
     'quote-props': ['error', 'as-needed'],
     quotes: ['error', 'single', { avoidEscape: true }],
     semi: ['error', 'never'],
-
-    // handled by prettier:
-    'array-bracket-spacing': 0,
-    'arrow-parens': 0,
-    indent: 0,
-    'keyword-spacing': 0,
-    'operator-linebreak': 0,
+    'sort-imports': 'error',
+    'sort-keys': 'error',
+    'sort-vars': 'error',
   },
 }
+
+// handled by prettier:
+Object.assign(config.rules, {
+  'array-bracket-spacing': 0,
+  'arrow-parens': 0,
+  indent: 0,
+  'keyword-spacing': 0,
+  'operator-linebreak': 0,
+})
+
+module.exports = config
