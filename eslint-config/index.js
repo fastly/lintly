@@ -31,9 +31,16 @@ const config = {
     'quote-props': ['error', 'as-needed'],
     quotes: ['error', 'single', { avoidEscape: true }],
     semi: ['error', 'never'],
-    'sort-imports': 'error',
-    'sort-keys': 'error',
-    'sort-vars': 'error',
+    'sort-imports': [
+      'error',
+      {
+        ignoreCase: true,
+        ignoreMemberSort: false,
+        memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
+      },
+    ],
+    'sort-keys': 0,
+    'sort-vars': ['error', { ignoreCase: true }],
   },
 }
 
