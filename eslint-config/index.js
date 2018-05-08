@@ -51,6 +51,7 @@ Object.assign(config.rules, {
   indent: 0,
   'keyword-spacing': 0,
   'operator-linebreak': 0,
+  'space-before-function-paren': 0,
 })
 
 module.exports = config
