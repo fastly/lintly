@@ -10,6 +10,9 @@
   "keywords": [
     "prettier"
   ],
+  "files": [
+    "index.js"
+  ],
   "author": "Fastly <support@fastly.com>",
   "license": "MIT",
   "private": false,
