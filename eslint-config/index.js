@@ -48,6 +48,7 @@ const config = {
 Object.assign(config.rules, {
   'array-bracket-spacing': 0,
   'arrow-parens': 0,
+  'generator-star-spacing': 0,
   indent: 0,
   'keyword-spacing': 0,
   'operator-linebreak': 0,
