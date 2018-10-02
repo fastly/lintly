@@ -6,7 +6,7 @@
 npm install --save-dev \
   @fastly/eslint-config@^1.0.0 \
   @fastly/prettier-config@^1.0.0 \
-  eslint-plugin-ember-suave@^1.0.0 \
+  eslint-plugin-ember@^5.0.0 \
   eslint-config-prettier@^2.9.0 \
   eslint-plugin-prettier@^2.4.0 \
   eslint@^4.12.1 \
@@ -27,7 +27,7 @@ extends: ['@fastly'],
 This includes
 
  * [`eslint:recommended`](https://eslint.org/docs/rules/)
- * [`plugin:ember-suave/recommended`](https://github.com/DockYard/eslint-plugin-ember-suave)
+ * [`plugin:ember/recommended`](https://github.com/ember-cli/eslint-plugin-ember)
  * `prettier:recommended` and [`@fastly/prettier-config`](../prettier-config/) via [eslint-plugin-prettier`](https://github.com/prettier/eslint-plugin-prettier)`
  * some custom overrides
 

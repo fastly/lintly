@@ -1,9 +1,9 @@
 const fastlyPrettierConfig = require('@fastly/prettier-config')
 
 const config = {
-  extends: ['eslint:recommended', 'plugin:prettier/recommended', 'plugin:ember-suave/recommended'],
+  extends: ['eslint:recommended', 'plugin:prettier/recommended', 'plugin:ember/recommended'],
 
-  plugins: ['prettier'],
+  plugins: ['ember', 'prettier'],
 
   rules: {
     'brace-style': ['error', '1tbs', { allowSingleLine: true }],
@@ -18,8 +18,13 @@ const config = {
       },
     ],
     curly: ['error', 'multi-line'],
-    'ember-suave/no-const-outside-module-scope': 'off',
-    'ember-suave/no-direct-property-access': 'off',
+    'ember/no-observers': ['error'],
+    'ember/use-ember-get-and-set': [
+      'error',
+      {
+        ignoreThisExpressions: true,
+      },
+    ],
     'max-statements-per-line': ['error', { max: 2 }], // allow one-line if
     'no-console': [
       'error',
