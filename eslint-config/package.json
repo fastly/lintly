@@ -1,6 +1,6 @@
 {
   "name": "@fastly/eslint-config",
-  "version": "1.4.3",
+  "version": "2.0.0",
   "description": "Fastly's default eslint configuration",
   "main": "index.js",
   "repository": {

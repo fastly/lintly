@@ -1,3 +1,9 @@
+### v2.0.0
+
+* replace `eslint-plugin-ember-suave` with `eslint-plugin-ember`
+* enable `ember/no-observers`
+* enable `ember/use-ember-get-and-set` except when the receiver is `this`
+
 ### v1.4.3
 
 * disable `generator-star-spacing` as prettier handles it
