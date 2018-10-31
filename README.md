@@ -1,5 +1,5 @@
 ## fastly/lintly
 
-This monorepo expresses Fastly's front-end code style-guide as a collection of npm packages containing default configuration for common linters.
+@fastly/eslint-config has moved to https://github.com/fastly/ux-platform/tree/main/packages/eslint-config
 
-See the READMEs of the various packages for more information.
+@fastly/prettier-config has moved to https://github.com/fastly/ux-platform/tree/main/packages/prettier-config
